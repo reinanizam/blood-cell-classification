@@ -4,8 +4,6 @@ Classifying eight types of peripheral blood cells from microscope images, compar
 
 **Best model: fine-tuned MobileNetV2 — 95.9% accuracy, 0.957 macro F1, 0.998 macro AUC on 3,415 held-out test images.**
 
-
-
 > Educational project. Not a diagnostic tool.
 
 ---
@@ -31,11 +29,7 @@ Classifying eight types of peripheral blood cells from microscope images, compar
 | SVM — polynomial | 0.9250 | 0.9181 | 0.9857 |
 | … 10 more classic models | | | |
 
-![Model comparison table](images/01_model_comparison_table.png)
-
 Only the selected model (fine-tuned MobileNetV2) was evaluated on the test set.
-
-![Combined ROC curves](images/02_combined_roc_all_models.png)
 
 ### Where the model makes mistakes
 
@@ -54,15 +48,9 @@ The errors cluster among **immature granulocytes (ig)**, **monocytes** and **neu
 
 Largest confusions: monocyte → ig (21), neutrophil → ig (18), ig → monocyte (16), ig → neutrophil (13).
 
-![Test confusion matrices](images/03_test_confusion_matrices.png)
-
 ### What the model looks at (Grad-CAM)
 
 Heat-maps show that, for correct predictions, the network focuses on the cell itself, not the background. Grad-CAM shows where the model looked, not why it chose a class.
-
-![Grad-CAM](images/04_gradcam_correct_vs_mistakes.png)
-
-![Final test metrics](images/05_final_test_metrics_report.png)
 
 ---
 
@@ -91,8 +79,7 @@ Heat-maps show that, for correct predictions, the network focuses on the cell it
 ```
 ├── blood-cell-classification.ipynb   # full notebook with outputs
 ├── README.md
-├── requirements.txt
-└── images/                           # figures used in this README
+└── requirements.txt
 ```
 
 ## How to run
