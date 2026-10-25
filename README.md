@@ -68,8 +68,6 @@ Heat-maps show that, for correct predictions, the network focuses on the cell it
 ## Limitations
 
 - One dataset from a single source; performance on other labs, stains or microscopes is unknown.
-- No large hyperparameter search (skipped for runtime); models use fixed settings.
-- The model comparison uses a single validation split, so small gaps (e.g. XGBoost vs the small CNN) are not firm differences. Only XGBoost and the polynomial SVM were cross-validated.
 - Neural-network results vary slightly between reruns (GPU non-determinism). The pipeline was rerun once with no setting changes: test accuracy moved from 95.70% to 95.90%. The numbers above are from the final run.
 - `ig` is a catch-all class of immature cells that look like several other types.
 - No medical validation.
