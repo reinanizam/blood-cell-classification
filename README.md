@@ -4,7 +4,7 @@ Classifying eight types of peripheral blood cells from microscope images, compar
 
 **Best model: fine-tuned MobileNetV2 — 95.9% accuracy, 0.957 macro F1, 0.998 macro AUC on 3,415 held-out test images.**
 
-![Eight blood-cell categories](images/00_cell_types_samples.png)
+
 
 > Educational project. Not a diagnostic tool.
 
