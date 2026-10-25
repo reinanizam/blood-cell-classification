@@ -2,7 +2,7 @@
 
 Classifying eight types of peripheral blood cells from microscope images, comparing 15 models: classic machine learning on hand-crafted features, a CNN trained from scratch, and transfer learning with MobileNetV2 (frozen and fine-tuned).
 
-**Best model: fine-tuned MobileNetV2 — 95.9% accuracy, 0.957 macro F1, 0.998 macro AUC on 3,415 held-out test images.**
+**Best model: fine-tuned MobileNetV2: 95.9% accuracy, 0.957 macro F1, 0.998 macro AUC on 3,415 held-out test images.**
 
 > Educational project. Not a diagnostic tool.
 
