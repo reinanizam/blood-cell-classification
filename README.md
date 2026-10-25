@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/33938877/README.md)
 # Blood Cell Image Classification
 
 Classifying eight types of peripheral blood cells from microscope images, comparing 15 models: classic machine learning on hand-crafted features, a CNN trained from scratch, and transfer learning with MobileNetV2 (frozen and fine-tuned).
